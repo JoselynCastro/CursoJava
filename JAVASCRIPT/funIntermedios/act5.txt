@@ -1,0 +1,11 @@
+function ene(x,y){
+    if (x.length<y){
+                return "null"
+    }
+    for(var i=0;i<x.length;i++){
+            if(x.length-i==y){
+                return x[i]
+            }     
+        }     
+}
+ene([5,2,3,6,4,9,7],3)

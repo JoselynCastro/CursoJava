@@ -1,0 +1,8 @@
+function cuad(x) {
+    var cuad=[];
+    for(var i=0;i<x.length;i++){
+          cuad.push(x[i]*x[i]);
+    }
+    return cuad;
+  }
+  console.log(cuad([1,5,10,-2]))

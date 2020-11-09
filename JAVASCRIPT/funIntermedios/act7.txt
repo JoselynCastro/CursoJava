@@ -1,0 +1,14 @@
+function doble(x){
+    var par=[]
+    for(var i=0;i<x.length;i++){
+        if (i%2==0){
+            par.push(x[i])
+            par.push(x[i])
+        }
+        else{
+        par.push(x[i])
+        }
+    }
+return par
+}
+console.log(doble([4, "Ulysses", 42, false]))

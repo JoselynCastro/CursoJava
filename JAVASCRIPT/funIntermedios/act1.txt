@@ -1,0 +1,10 @@
+function sigma(x){
+var num=[]
+var sig=0;
+for (var i =0; i<=x; i++) {
+    num.push(i)
+    sig+=i
+    }
+    return(sig)
+}
+console.log(sigma(3))

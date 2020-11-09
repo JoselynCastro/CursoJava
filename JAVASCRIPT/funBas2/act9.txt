@@ -1,0 +1,8 @@
+function siete(x){
+    array=[]
+    for(var i=0;i<x.length;i++){
+        array.push(x[i]+7)
+  }
+  return array
+}
+  console.log(siete([1,2,3]));

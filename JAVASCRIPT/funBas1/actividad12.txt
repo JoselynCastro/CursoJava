@@ -1,0 +1,7 @@
+function squareValue(x){
+    var arr=(x);
+    var rev= arr.reverse ();
+    return rev
+   }
+   y = squareValue([1,5,10,-2]);
+   console.log(y);

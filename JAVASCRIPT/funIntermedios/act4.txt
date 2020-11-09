@@ -1,0 +1,10 @@
+function penultimo(x){
+    if(x.length<2){
+            return ("null")
+        }
+    for(var i=0;i<x.length;i++){ 
+     
+            return(x[x.length-2])      
+    }
+} 
+penultimo([42,true,4,"Liam",7])

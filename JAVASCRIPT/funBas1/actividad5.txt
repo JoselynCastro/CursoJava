@@ -1,0 +1,10 @@
+function may(x) {
+    var may=0;
+    for(var i=0;i<x.length;i++){
+      if (x[i]>may){
+          may=x[i]
+      }
+    }
+    return may;
+  }
+console.log( may([4,2,3]) )

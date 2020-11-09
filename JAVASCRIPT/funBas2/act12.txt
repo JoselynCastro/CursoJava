@@ -1,0 +1,15 @@
+function hambriento(x){
+        comida=[]
+        for(var i=0;i<x.length;i++){
+        if (x[i]>0){
+            comida.push("yummy")
+        }
+  }
+  if (comida.length==0){
+  return("tengo hambre")
+  }
+  if (comida.length>0){
+  return comida
+  }
+}
+  console.log(hambriento([-1,-3,-5]));

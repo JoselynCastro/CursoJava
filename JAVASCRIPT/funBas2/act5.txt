@@ -1,0 +1,14 @@
+function par(x){
+    pos=[]
+    arr=[]
+    for(var i=0;i<x.length;i++){
+        arr.push(x[i])
+    if (x[i]>=0){
+        pos.push(x[i])
+          } 
+    }
+arr.pop()
+arr.push(pos.length)
+return arr
+}
+console.log(par([-1,1,1,1]));

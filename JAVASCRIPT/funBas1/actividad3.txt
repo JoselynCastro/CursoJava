@@ -1,0 +1,6 @@
+function imp(x) {
+    for(var i=1;i<=x;i=i+2){
+      console.log(i);
+    }
+  }
+imp(5000);

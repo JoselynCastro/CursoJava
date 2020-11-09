@@ -1,0 +1,6 @@
+function num(x) {
+  for(var i=0;i<=x;i++){
+    console.log(i);
+  }
+}
+num(255);

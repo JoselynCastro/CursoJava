@@ -1,0 +1,8 @@
+function escala(x,y){
+    var esc=[]
+    for(var i=0;i<x.length;i++){
+        esc.push(x[i]*y) 
+    } 
+   return esc   
+}
+console.log(escala([1,2,3],3)) 

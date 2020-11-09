@@ -1,0 +1,8 @@
+function imp(x) {
+    var imp=[]
+    for(var i=1;i<=x;i=i+2){
+      imp.push(i);
+    }
+    return imp
+  }
+console.log(imp(50));

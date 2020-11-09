@@ -1,0 +1,10 @@
+function factorial(x){
+var num=[]
+var fac=1;
+for (var i =1; i<=x; i++) {
+    num.push(i)
+    fac=fac*i
+    }
+    return(fac)
+}
+console.log(factorial(3))

@@ -1,0 +1,17 @@
+function segundo(x){
+    var may=0;
+    var j=[]
+    if(x.length<=2){
+        return ("null")
+    }
+    for(var i=0;i<x.length;i++){
+        if(x[i]==Math.max.apply(null,x)){
+            may=x[i] 
+        }  
+        else {
+        j.push(x[i])  
+        }   
+    }
+return Math.max.apply(null,j)
+}
+console.log(segundo([42,1,4,3.14,7])) 

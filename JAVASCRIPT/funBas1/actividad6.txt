@@ -1,0 +1,8 @@
+function prom(x) {
+    var prom=0;
+    for(var i=0;i<x.length;i++){
+          prom=prom+x[i]
+    }
+    return(prom/x.length)
+  }
+  console.log(prom([4,2,3]))

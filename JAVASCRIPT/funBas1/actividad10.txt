@@ -1,0 +1,13 @@
+function pos(x) {
+    var pos=[];
+    for(var i=0;i<x.length;i++){
+        if (x[i]>=0){
+            pos.push(x[i])
+        }
+        if (x[i]<0){
+            pos.push(0)
+        }
+    }
+    return pos;
+  }
+  console.log(pos([1,5,10,-2]));

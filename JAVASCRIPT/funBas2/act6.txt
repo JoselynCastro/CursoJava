@@ -1,0 +1,21 @@
+function pyi(x){
+     var pares=0;
+     var impares=0;
+     for(var i=0;i<x.length;i++){
+         if(x[i]%2==0){
+             pares=pares+1
+             impares=0
+             if(pares==3){
+                 console.log("¡Es para bien!")
+             }
+         }
+         else{
+             impares=impares+1
+             pares=0
+             if(impares==3){
+                 console.log("¡Que imparcial!")
+             }
+         }
+     }
+}
+pyi([2,2,4,4])

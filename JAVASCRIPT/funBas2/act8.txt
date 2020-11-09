@@ -1,0 +1,9 @@
+function longitud(x){
+    var previo=[]
+        previo.push(x[0])
+        for(var i=1;i<x.length;i++){
+               previo.push(x[i-1].length)
+            }  
+     return previo 
+}
+console.log(longitud(["programar","dojo", "genial"]))

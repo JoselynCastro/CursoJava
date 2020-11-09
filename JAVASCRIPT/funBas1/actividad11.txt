@@ -1,0 +1,19 @@
+function varios(x) {
+    may=0;
+    men=0;
+    sum=0;
+    for(var i=0;i<x.length;i++){
+        sum=x[i]+sum
+        if (x[i]>=may){
+            may=x[i]
+        }
+        if (x[i]<men){
+            men=x[i]
+        }
+        
+    }
+    console.log (may);
+    console.log(men)
+    return(sum/x.length)
+  }
+  console.log(varios([1,5,10,-2]));
