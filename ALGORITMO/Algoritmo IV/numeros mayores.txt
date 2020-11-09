@@ -1,0 +1,12 @@
+function may(x) {
+    var num= y;
+    var may=[];
+    for(var i=0;i<x.length;i++){
+        if (x[i]>num){
+            may.push(x[i]);
+        }
+    }
+    return may;
+  }
+y=5;
+console.log(may([8,2,3,4,5,7,9,10]));

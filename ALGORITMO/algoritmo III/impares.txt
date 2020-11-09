@@ -1,0 +1,7 @@
+function returnOddArray(x){
+   for(var i=1;i<=x;i=i+2){
+      console.log(i)
+   }
+}
+y = returnOddArray(255);
+console.log(y);

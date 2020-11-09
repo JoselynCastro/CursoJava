@@ -1,0 +1,23 @@
+function printAverage(x){
+   sum = 0;
+   max = 0;
+   min = x[0];
+   for(var i=0; i<x.length; i++){
+     sum=sum+x[i]
+   if (max<x[i]){
+       max=x[i]
+   }
+   if (min>x[i]){
+       min=x[i]
+   }
+}
+   console.log(max)
+   console.log(min) 
+   return(sum/x.length)
+
+}
+y = printAverage([1,2,3]);
+console.log(y);
+  
+y = printAverage([2,5,8]);
+console.log(y);

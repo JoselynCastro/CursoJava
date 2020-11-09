@@ -1,0 +1,14 @@
+function transformacion(x){
+    var val=[]
+    for(var i=0;i<x.length;i++){
+     if(i==(x.length-1)){
+         val.push(0)
+         break
+     }
+     x[i]=x[i+1]
+        val.push(x[i])
+  }
+  return val
+  }
+y = transformacion([1,2,3]);
+console.log(y);

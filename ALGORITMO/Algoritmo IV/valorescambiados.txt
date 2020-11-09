@@ -1,0 +1,17 @@
+function squareValue(x){
+   val=[]
+   for(var i=0;i<=x.length-1;i++){
+    if(x[i]>0){
+      val.push(x[i])
+    }
+    else{
+       val.push("Dojo")
+    }
+}
+   return val
+}
+y = squareValue([1,-2,3]);
+console.log(y);
+  
+y = squareValue([2,5,-8]);
+console.log(y);
