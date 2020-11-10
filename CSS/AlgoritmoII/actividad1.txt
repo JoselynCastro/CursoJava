@@ -1,0 +1,11 @@
+function printUpTo(x) {
+  if(x<0){
+   return("false")
+  }
+  for(var i=0;i<=x;i++){
+    console.log(i);
+  }
+}
+printUpTo(1000);
+y = printUpTo(-10);
+console.log(y);

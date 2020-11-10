@@ -1,0 +1,13 @@
+function printAverage(x){
+   sum = 0;
+   for(var i=0; i<x.length; i++){
+     sum=sum+x[i]
+   }
+   y=(sum/x.length)
+   console.log(y)
+}
+y = printAverage([1,2,3]);
+console.log(y);
+  
+y = printAverage([2,5,8]);
+console.log(y);

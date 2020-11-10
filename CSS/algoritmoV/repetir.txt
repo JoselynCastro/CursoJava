@@ -1,0 +1,10 @@
+function squareValue(x){
+    var val=[]
+    for(var i=0;i<x.length;i++){
+         val.push(x[i])
+         val.push(x[i])
+  }
+  return val
+  }
+  y = squareValue([1,2,-3]);
+  console.log(y);

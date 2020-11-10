@@ -1,0 +1,13 @@
+function squareValue(x){
+   val=[]
+   for(var i=0;i<=x.length-1;i++){
+      val.push(x[i]*x[i])
+   }
+   return val
+   console.log(val)
+}
+y = squareValue([1,2,3]);
+console.log(y);
+  
+y = squareValue([2,5,8]);
+console.log(y);
