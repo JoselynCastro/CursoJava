@@ -1,0 +1,202 @@
+
+#contenedor{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+#blancosuperior{
+    width: 100%;
+    height: 80px;
+}
+#logo,#h1{
+    display: inline-table;
+}
+#logo{
+    width: 100px;
+    height: 100pxpx;
+}
+#h1{
+    color:grey;
+    width:500px;
+    height: 80px;
+    vertical-align: top;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.azul{
+    color:#25679f;
+}
+.rojo{
+    color: red;
+}
+#encabezado{
+    background-color: #26689f;
+    width: 1325px;
+    height: 60px;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 30px;
+    color: white;
+}
+#titulo{
+    display: inline-table;
+    margin-left: 100px;
+}
+#contenido{
+    background-color: #e3e3e3;
+    background: linear-gradient(#e3e3e3,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff);
+
+}
+#columna,#texto{
+    display: inline-table;
+}
+#columna{
+    width: 300px;
+    height: 600px;
+}
+#columna1{
+    width:300px;
+    height:200px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#link1{
+    background-color:#3473a9;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#link2{
+    background-color:#ef7f00;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+#linea{
+    background-color: black;
+    width: 300px;
+    height: 3px;
+}
+#columna2{
+    width:250px;
+    height:350px;
+    background-image: url("ad_background.png");
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 20px;
+}
+#codigo{
+    width:300px;
+    height:400px;
+}
+#textoencima{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#ninja{
+    width:150px;
+    height: 150px;
+    margin-left: 40px;
+}
+#link3{
+    background-color:#00c1df;
+    border-radius: 10px;
+    color: white;
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 33px;
+    margin-top: 15px;
+}
+#texto{
+    width:940px;
+    height:600px;
+    vertical-align: top;
+    margin-left: 60px;
+}
+#subencabezado{
+    width:950px;
+    height: 80px;
+}
+#home,#contacto,#datoscontacto{
+    display: inline-table;
+}
+#home{
+    width: 200px;
+    height: 80px;
+    vertical-align: top;
+}
+#casa{
+    width: 30px;
+    height: 30px;
+}
+#dns{
+    display: inline;
+    color: #25679f;
+    font-weight: bold;
+}
+#fono{
+    width:60px;
+    height:60px;
+    vertical-align: top;
+    margin-left: 430px;
+}
+#datoscontacto{
+    width: 250px;
+    height: 60px;
+    font-size: 12px;
+    vertical-align: top;
+}
+#telefono{
+    font-size: 20px;
+    color: #0bc2e0;
+}
+#textointerior{
+    width:950px;
+    height:500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.subtitulo{
+    color:#25679f;
+    font-size: 25px;
+}
+.celeste{
+    color:#0bc2e0;
+}
+#circulo{
+    width: 300px;
+    height: 100px;
+    margin-left: 300px;
+}
+#piedepagina{
+    width:950px;
+    height:130px;
+    border-color:#0085e0;
+    border-style: solid;
+}
+#circulos2,#tercertexto{
+    display: inline-table;
+}
+#circulos2{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+#tercertexto{
+    height: 100px;
+    width: 800px;
+    vertical-align: top;
+}

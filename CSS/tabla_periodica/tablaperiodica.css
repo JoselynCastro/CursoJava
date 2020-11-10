@@ -1,0 +1,115 @@
+
+#container{
+    background-color: #eeeeee;
+    align-content: center;
+    padding-left: 140px;
+    padding-right: 200px;
+}
+.exterior{
+    color: red;
+}
+.frase{
+    width:4%;
+    height: 10%;
+    display: inline-table;
+}
+.horizontal{
+    width:90%;
+    height:10%;
+    display: inline-table;
+    margin-left: 20px;
+}
+.vertical{
+    width:4%;
+    line-height:58px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 40px;
+}
+.font{
+    font-size: 9px;
+}
+span{
+    font-size: 20px;
+    display: block;
+    width:40px;
+    color: #3713a4;
+    font-weight: bold;
+}
+#celeste{
+    display: inline-table;
+    vertical-align: top;
+    height: 40px;
+    width: 94px;
+}
+.celeste{
+    background-color:#689bff;
+    display:block;
+    width: 40px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    display: inline-table;
+    margin-left: 5px;
+}
+#rosa{
+    width:470px;
+    display: inline-table;
+    vertical-align: bottom;    
+}
+.rosa{
+    background-color:#fd9a98;
+    display:block;
+    width: 40px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    display: inline-table;
+    margin-left:5px;
+}
+#amarillos{
+    display: inline-table;
+    vertical-align: top;
+    width: 320px;
+}
+.amarillo{
+    background-color:#fecb00;
+    display:block;
+    width: 40px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    display: inline-table;
+    margin-left: 5px;
+}
+#solito{
+    margin-left: 72%;
+}
+.sm{
+    margin-left: 1px !important;
+}
+#final{
+    width: 120px;
+    display: inline-table;
+}
+#verdes{
+    width:700px;
+    vertical-align: top;
+    display: inline-table;
+    margin-left:18px;
+}
+.verde{
+    background-color:#1fca21;
+    display:block;
+    width: 40px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    display: inline-table;
+    margin-left: 5px;
+}

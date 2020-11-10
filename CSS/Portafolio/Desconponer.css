@@ -1,0 +1,234 @@
+
+#container{
+    background-color:#f3f3f3;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+#encabezado{
+    background-color:#f3f3f3;
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+}
+#Jayne{
+    font-family: Comic sans-serif;
+    color: black;
+    font-size:50px;
+    width: 400px;
+    height: 80px;
+    display: inline-table;
+    padding:10px
+}
+#master{
+    font-family: Comic sans-serif;
+    color:black;
+    font-size:40px;
+    width: 600px;
+    height: 80px;
+    display: inline-table;
+    margin-left: 300px;
+}
+#container2{
+    background-color: #503c45;
+    height: 1030px;
+    width: 1235px;
+    display: inline-block;
+    padding: 50px;
+}
+#imagen{
+    width: 570px;
+    height: 340px;
+    display: inline-table;
+    position: absoluta;
+}
+#Joe,#PP{
+    display: inline-table;
+    vertical-align: top;
+}
+#Joe{
+    width: 570px;
+    height: 340px;
+    align-content: center;
+    padding: 10px; 
+    background-color: #bab8b9;
+}
+.titulo,.parrafo{
+    display: inline-block;
+}
+.titulo{
+    background-color:#918f9a; 
+    width: 595px;
+    height:50px;
+    display: inline-block;
+    margin-left: 40px;
+    font-style: arial;
+    font-size: 28px;
+    color: #eff1f0;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.parrafo{
+    background-color: #eae2ea;
+    width: 580px;
+    height: 290px;
+    display: block;
+    margin-left: 40px;
+    font-style: times ;
+    font-weight: bold;
+    font-size: 15px;
+    color:black;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+#bloque1,#bloque2,#bloque3{
+    display: inline-table;
+    vertical-align: top;
+}
+#titulo1,#parrafo2,#titulo2, .parrafo2{
+    display:block
+}
+.titulo1,.parrafo1,.titulo2,.parrafo2{
+    display:block;
+}
+#titulo1{
+    background-color:#918f9a; 
+    width: 377px;
+    height:40px;
+    vertical-align: top; 
+    margin-top: 40px;
+    font-style: arial;
+    font-weight: bold;
+    font-size: 28px;
+    color: #eff1f0;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#parrafo1{
+    background-color: #eae2ea;
+    width: 382px;
+    height: 330px;
+    display: inline-block;
+}
+.orden{
+    margin: 10px;
+}
+.titulo1{
+    background-color:#918f9a; 
+    width: 377px;
+    height:40px;
+    vertical-align: top; 
+    margin-top: 40px;
+    margin-left: 40px;
+    font-style: arial;
+    font-weight: bold;
+    font-size: 28px;
+    color: #eff1f0;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.parrafo1{
+    background-color: #eae2ea;
+    width: 382px;
+    height: 330px;
+    display: inline-block;
+    margin-left: 40px;
+    text-align: justify; 
+}
+.titulo2{
+    background-color:#918f9a; 
+    width: 377px;
+    height:40px;
+    vertical-align: top;
+    margin-left: 40px;
+    font-style: arial;
+    font-weight: bold;
+    font-size: 28px;
+    color: #eff1f0;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.parrafo2{
+    background-color: #eae2ea;
+    width: 382px;
+    height: 220px;
+    display: inline-block;
+    margin-left: 40px;
+}
+.imagenbox{
+    width: 382px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin:0%;
+}
+#titulo2{
+    background-color:#918f9a; 
+    width: 377px;
+    height:40px;
+    vertical-align: top;
+    font-style: arial;
+    font-weight: bold;
+    font-size: 28px;
+    color: #eff1f0;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#parrafo2{
+    background-color: #eae2ea;
+    width: 382px;
+    height: 220px;
+    display: inline-block;    
+}
+.imagenlogo{
+    margin: 10px;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+}
+.link{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 6px;
+    background-color:#407d61;
+    border-radius: 5px;
+}
+#piedepagina{
+    background-color:#f3f3f3;
+    width: 100%;
+    height: 110px;
+    display: inline-block;
+}
+#pie{
+    margin: auto;
+    width: 350;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+#redes{
+    margin:auto;
+    width: 350px;
+    height: 50px;
+}
+.redes{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    margin:0%;
+}
+.imagenpie{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
