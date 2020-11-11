@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="act. Pacman" content="recrear pacman coding dojo">
+    <title>Pacman</title>
+    <style type="text/css">
+        body{
+            background-color: black;
+            margin:0px;
+            line-height: 0px;
+        }
+        .row{
+            margin: 0px;
+            padding: 0px
+        }
+        .ladrillo{
+            background-color: blue;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+        }
+        .vacio{
+            background-color: black;
+            width:20px;
+            height:20px;
+            display: inline-block;
+        }
+        .coin{
+            background: url("img/moneda-mario-bros-80149.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            width:20px;
+            height:20px;
+            display: inline-block;     
+        }
+        #pacman{
+            background: url("img/pacman.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 20px;
+            height:20px;
+            position:absolute;
+            display: inline-block;   
+        }
+        #pacman2{
+            background: url("img/pacman.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 20px;
+            height:20px;
+            position:absolute;  
+            display: inline-block; 
+        }
+        #puntaje{
+            border:1px solid white;
+            width: 50px;
+            height: 20px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            top:10px;
+            left:400px;
+        }
+        #vida{
+            border:1px solid white;
+            width: 50px;
+            height: 20px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            top:40px;
+            left:400px;
+        }
+        .cereza{
+            background: url("img/cerecita.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 20px;
+            height:20px;
+            display: inline-block; 
+        }
+        .fantasma{
+            background: url("img/fantasma.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 20px;
+            height:20px;
+            display: inline-block; 
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="mundo"></div>
+        <div id="pacman"></div> 
+        <div id="pacman2"></div>
+        <div id="fantasma"></div>
+        <div id="puntaje"></div>
+        <div id="vida"></div>
+    </div>
+    <script>
+        var mundo=[
+            [2,2,2,2,2,2,2,2,2,2,2,2,2,2],
+            [2,0,1,1,1,1,1,1,1,1,1,1,1,2],
+            [2,1,2,2,1,2,2,2,1,2,1,2,1,2],
+            [2,1,2,2,3,1,1,1,1,1,3,1,1,2],
+            [2,1,1,2,1,2,1,2,2,2,2,1,1,2],
+            [2,2,1,2,1,2,1,2,1,1,1,1,2,2],
+            [0,2,1,2,1,2,1,2,1,2,2,1,2,0],
+            [0,2,1,1,1,1,4,1,1,1,1,1,2,0],
+            [2,2,1,2,2,2,2,2,2,2,2,1,2,2],
+            [2,1,1,1,2,2,1,1,1,1,1,1,2,2],
+            [2,1,2,1,1,2,1,2,1,2,2,1,1,2],
+            [2,1,2,2,1,1,1,2,1,2,2,2,1,2],
+            [2,0,3,1,1,2,2,2,1,1,1,3,1,2],
+            [2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+    ];
+        var pacman={
+            x:1,
+            y:1
+        };
+        var pacman2={
+            x:1,
+            y:12
+        };
+        var fantasma={
+            x:1,
+            y:1
+        }
+        var puntaje=0;
+        var vida=3;
+        var valMundo={
+            0: 'vacio',
+            1: 'coin',
+            2: 'ladrillo',
+            3: 'cereza',
+            4: 'fantasma'
+        }
+        
+        function displayMundo(){
+            output="";
+            for( var row=0; row<mundo.length; row++){
+            output+= "<div class='row'></div>"
+                for( var x=0;x<mundo[row].length; x++){
+                    output+= "<div class='"+valMundo[mundo[row][x]]+"'></div>";
+                }
+                output+="</div>";
+            }
+            document.getElementById('mundo').innerHTML=output;
+        }
+
+        function displayPuntaje(){
+            document.getElementById("puntaje").innerHTML = puntaje;
+        }
+
+        function displayvida(){
+            document.getElementById("vida").innerHTML = vida;
+        }
+
+        function displayfantasma() {
+			document.getElementById("fantasma").style.top = fantasma.y*20+"px";
+			document.getElementById("fantasma").style.left = fantasma.x*20+ "px";
+        }
+        
+        function displayPacman(){
+            document.getElementById("pacman").style.left =pacman.x*20+"px";
+            document.getElementById("pacman").style.top = pacman.y*20+"px";
+        }
+        function displayPacman2(){
+            document.getElementById("pacman2").style.left = pacman2.x*20+"px";
+            document.getElementById("pacman2").style.top = pacman2.y*20+"px";
+        }
+        
+        displayMundo();
+        displayPuntaje();
+        displayfantasma();
+        displayPacman();
+        displayPacman2();
+        displayvida();
+        
+        document.onkeydown = function(mov){
+            if(mov.keyCode == 37){
+                if(mundo[pacman.y][pacman.x-1]!=2){
+                pacman.x--;
+                document.getElementById("pacman").style.backgroundImage = "url('img/pacmanizq.gif')";+
+                console.log(mov)   
+                }
+            } 
+            if(mov.keyCode == 39){
+                if(mundo[pacman.y][pacman.x+1]!=2){ 
+                pacman.x++;
+                document.getElementById("pacman").style.backgroundImage = "url('img/pacman.gif')"; 
+                }
+            }
+            if(mov.keyCode == 38) { 
+                if(mundo[pacman.y-1][pacman.x]!=2){ 
+                pacman.y--;
+                document.getElementById("pacman").style.backgroundImage = "url('img/pacmanarriba.gif')";
+                }
+            }
+            if(mov.keyCode == 40) {
+                if(mundo[pacman.y+1][pacman.x]!=2){  
+                pacman.y++;
+                document.getElementById("pacman").style.backgroundImage = "url('img/pacmanabajo.gif')";
+                }
+            }
+            if(mov.keyCode == 83){ 
+                if(mundo[pacman2.y][pacman2.x+1]!=2){ 
+                pacman2.x++;
+                document.getElementById("pacman2").style.backgroundImage = "url('img/pacman.gif')"; 
+                }
+            }
+            if(mov.keyCode == 65) { 
+                if(mundo[pacman2.y][pacman2.x-1]!=2){ 
+                pacman2.x--;
+                document.getElementById("pacman2").style.backgroundImage = "url('img/pacmanizq.gif')"; 
+                }
+            }
+            if(mov.keyCode == 87) { 
+                if(mundo[pacman2.y-1][pacman2.x]!=2){  
+                pacman2.y--;
+                document.getElementById("pacman2").style.backgroundImage = "url('img/pacmanarriba.gif')";
+                }
+            }
+            if(mov.keyCode == 90) { 
+                if(mundo[pacman2.y+1][pacman2.x]!=2){  
+                pacman2.y++;
+                document.getElementById("pacman2").style.backgroundImage = "url('img/pacmanabajo.gif')";
+                }
+            }
+            if(mundo[pacman.y][pacman.x]==1 || mundo[pacman.y][pacman.x]==3){
+                if(mundo[pacman.y][pacman.x]==1){
+                    puntaje=puntaje+10;
+                }
+                if(mundo[pacman.y][pacman.x]==3){
+                    puntaje=puntaje+50;
+                }
+                mundo[pacman.y][pacman.x]=0;
+            } 
+            if(mundo[pacman2.y][pacman2.x]==1 || mundo[pacman2.y][pacman2.x]==3){
+                if(mundo[pacman2.y][pacman2.x]==1){
+                    puntaje=puntaje+10;
+                }
+                if(mundo[pacman2.y][pacman2.x]==3){
+                    puntaje=puntaje+50;
+                }
+                mundo[pacman2.y][pacman2.x]=0;
+            }
+            if(mundo[pacman2.y][pacman2.x]==4){
+                vida=vida-1;
+            }
+            if(mundo[pacman.y][pacman.x]==4){
+                vida=vida-1;
+            }
+            displayPacman();
+            displayPacman2();
+            displayfantasma();
+            displayMundo();
+            displayPuntaje();
+            displayvida();
+        }
+    </script>
+</body>
+</html>
