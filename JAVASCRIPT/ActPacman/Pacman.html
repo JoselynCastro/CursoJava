@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="act. Pacman" content="recrear pacman coding dojo">
     <title>Pacman</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style type="text/css">
         body{
             background-color: black;
@@ -254,12 +255,23 @@
                 }
                 mundo[pacman2.y][pacman2.x]=0;
             }
-            if(mundo[pacman2.y][pacman2.x]==4){
+            if(mundo[pacman2.y][pacman2.x]==4){ 
                 vida=vida-1;
+                if(vida==0){
+                 $(document).keydown(function(){
+                    alert("Game Over");
+                 });
+               }
             }
             if(mundo[pacman.y][pacman.x]==4){
                 vida=vida-1;
+                if(vida==0){
+                 $(document).keydown(function(){
+                    alert("Game Over");
+                 });
+                }
             }
+            
             displayPacman();
             displayPacman2();
             displayfantasma();
