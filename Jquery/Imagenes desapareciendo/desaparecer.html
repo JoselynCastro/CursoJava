@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="act. desaparecer" content="actividad jQuery">
+        <title>Desaparecer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style type="text/css">
+            #contenedor{
+                width:100%;
+                height: 1000px;
+                background-color: rgb(82, 243, 152);
+                padding-top:20px;
+                text-align: center;
+            }
+            .imagen{
+                width:300px;
+                height: 300px;
+                display: inline-block;
+                border: black 3px solid; 
+                margin-top: 10px;
+            }
+            #boton{
+                position: absolute;
+                top:800px;
+                left:50px;
+                width: 200px;
+                height: 60px;
+                border-radius: 5px;
+                background-color: rgb(33, 77, 33);
+                font-size: 20px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <h1>FLORES DE BACH</h1>
+                <img id="1" class="imagen" src="img/img1.jpg" alt="imagen1">
+                <img id="2" class="imagen" src="img/img2.jpg" alt="imagen2"> 
+                <img id="3" class="imagen" src="img/img3.jpg" alt="imagen3">
+                <img id="4" class="imagen" src="img/img4.jpg" alt="imagen4">
+                <img id="5" class="imagen" src="img/img5.jpg" alt="imagen5">
+                <img id="6" class="imagen" src="img/img6.jpg" alt="imagen6">
+                <img id="7" class="imagen" src="img/img7.jpg" alt="imagen7">
+                <img id="8" class="imagen" src="img/img8.jpg" alt="imagen8">
+                <button id="boton">Restablecer todo</button>
+                <p>Reestablece la imagen que quieres:
+                    <button class="1">Imagen 1</button>
+                    <button class="2">imagen 2</button>
+                    <button class="3">Imagen 3</button>
+                    <button class="4">Imagen 4</button>
+                    <button class="5">Imagen 5</button>
+                    <button class="6">Imagen 6</button>
+                    <button class="7">Imagen 7</button>
+                    <button class="8">Imagen 8</button>
+                </p>
+        </div>
+        
+        <script>
+        $('#1').click(function(){
+               $("#1").hide()
+            });
+        $('#2').click(function(){
+               $("#2").hide()
+            });
+        $('#3').click(function(){
+               $("#3").hide()
+            });
+        $('#4').click(function(){
+               $("#4").hide()
+            });
+        $('#5').click(function(){
+               $("#5").hide()
+            });
+        $('#6').click(function(){
+               $("#6").hide()
+            });
+        $('#7').click(function(){
+               $("#7").hide()
+            });
+        $('#8').click(function(){
+               $("#8").hide()
+            });
+        $('#boton').click(function(){
+               $("#1,#2,#3,#4,#5,#6,#7,#8").fadeIn();
+            });
+        $('button.1').click(function(){
+               $("#1").show()
+            });
+        $('button.2').click(function(){
+               $("#2").show()
+            });
+        $('button.3').click(function(){
+               $("#3").show()
+            });
+        $('button.4').click(function(){
+               $("#4").show()
+            });
+        $('button.5').click(function(){
+               $("#5").show()
+            });
+        $('button.6').click(function(){
+               $("#6").show()
+            });
+        $('button.7').click(function(){
+               $("#7").show()
+            });
+        $('button.8').click(function(){
+               $("#8").show()
+            });
+        </script>
+    </body>
+</html>
