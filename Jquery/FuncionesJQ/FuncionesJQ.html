@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="funJQ" content="primera actividad JQ">
+        <title>JQUERY</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="FuncionesJQ.css" >
+    </head>
+    <body>
+        <div id="container">
+            <h1> FUNCIONES JQUERY</h1>
+            <div id="click" class="cajas1">
+                <h1>.CLICK</h1>
+                <p>El evento de clic ocurre cuando se hace clic en un elemento.
+                    <br><span>en este ejemplo al presionar el botón, arrojará una alerta diciendo "haz hecho click"</span>
+                </p>
+                <button>.click</button>
+            </div>
+            <div id="hide" class="cajas1">
+                <h1>.HIDE</h1>
+                <p>El método hide () oculta los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el boton, ocultará el div </span>
+                </p>
+                <button>.hide</button>
+            </div>
+            <div id="show" class="cajas1">
+                <h1>.SHOW</h1>
+                <p>El método show () muestra los elementos seleccionados ocultos.
+                    <br><span>en este ejemplo al presionar el botón, se mostrará el div oculto</span>
+                </p>
+                <button>.show</button>
+            </div>
+            <div id="toggle" class="cajas1">
+                <h1>.TOGGLE</h1>
+                <p>El método toggle () alterna entre hide () y show () para los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón se alternará con el párrafo </span> 
+                </p>
+                <button>.toggle</button>
+            </div>
+            <div id="sube" class="cajas1" >
+                <h1>.SLIDEUP</h1>
+                <p>El método slideUp () desliza hacia arriba (oculta) los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón se ocultará el título</span> 
+                </p>
+                <button>.slideUp</button>
+            </div>
+            <div id="baja" class="cajas2">
+                <h1>.SLIDEDOWN</h1>
+                <p>El método desliza hacia abajo (muestra) los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón se mostrará el título de SlideUP</span> 
+                </p>
+                <button>.slideDown</button>
+            </div>
+            <div id="slideToggle" class="cajas2">
+                <h1>SLIDETOGGLE</h1>
+                <p>El método alterna entre slideUp () y slideDown () para los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón, se alternará el título</span> 
+                </p>
+                <button>.slideToggle</button>
+            </div>
+            <div id="fadein" class="cajas2">
+                <h1>.FADEIN</h1>
+                <p>El método jQuery se utiliza para fundir(mostrar) un elemento oculto.
+                    <br><span>antes de presionar el botón oculta hide y título de slideToggle </span> 
+                </p>
+                <button>.fadein</button>
+            </div>
+            <div id="fadeout" class="cajas2">
+                <h1>.FADEOUT</h1>
+                <p>Se usa para desvanecer un elemento visible.</p>
+                     <br><span>en este ejemplo al presionar el botón se desvanecerá el div click, show y hide </span> 
+                <button>.fadeout</button>
+            </div>
+            <div id="clase" class="cajas2">
+                <h1>.ADDCLASS</h1>
+                <p>El método addClass () agrega uno o más nombres de clase a los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón las cajas verdes tomaran la clase de las amarillas</span> 
+                </p>
+                <button>.addClass</button>
+            </div>
+            <div id="before" class="cajas3">
+                <h1>.BEFORE</h1>
+                <p>El método before () inserta el contenido especificado delante (antes) de los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón se insertará antes del título "esto funciona"</span> 
+                </p>
+                <button>.before</button>
+            </div>
+            <div id="after" class="cajas3">
+                <h1>.AFTER</h1>
+                <p>El método after () inserta el contenido especificado después de los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón se insertará después del parrafo "esto es maravilloso"</span>
+                </p>
+                <button>.after</button>
+            </div>
+            <div id="append"class="cajas3">
+                <h1>.APPEND</h1>
+                <p>El append()método agrega un elemento al final de la lista.
+                <ul>
+                    <li>Hola</li>
+                    <li>Buen día</li>
+                </ul>
+                    <br><span>en este ejemplo al presionar el botón se añadirá a la lista "un gusto verte"</span>
+                </p>
+                <button>.append</button>
+            </div>
+            <div id="html" class="cajas3">
+                <h1>.HTML</h1>
+                <p>El método html () establece o devuelve el contenido (innerHTML) de los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón se agregará otro título</span>
+                </p>
+                <button>.html</button>
+            </div>
+            <div id="valores" class="cajas4">
+                <h1>.ATTR</h1>
+                <p>El método attr () establece o devuelve atributos y valores de los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón las vieñetas de la lista del div append se transforman a cuadrado</span>
+                </p>
+                <button>.attr</button>
+            </div>
+            <div id="val" class="cajas4">
+                <h1>.VAL</h1>
+                <p>El método val () devuelve o establece el atributo de valor de los elementos seleccionados.Se usa principalmente con elementos de formulario.
+                    <p>Nombre:<input type="text" name="estudiante"></p>
+                    <br><span>en este ejemplo al presionar el botón se establecerá un nombre</span>
+                </p>
+                <button>.val</button>
+            </div>
+            <div id="text" class="cajas4">
+                <h1>.TEXT</h1>
+                <p>El método text () establece o devuelve el contenido de texto de los elementos seleccionados.
+                    <br><span>en este ejemplo al presionar el botón todos los textos de los botones dirán "presionar"</span>
+                </p>
+                <button>.text</button>
+            </div>
+        </div>
+        <script>
+            $('#click').click(function(){
+                alert("Haz hecho click")
+            });
+            $('#hide').click(function(){
+               $("#hide").hide()
+            });
+            $('#show').click(function(){
+               $("#hide").show()
+            });
+            $("#toggle").click(function(){
+               $("#toggle p").toggle()
+            });
+            $("#sube").click(function(){
+               $("#sube h1").slideUp()
+            });
+            $("#baja").click(function(){
+               $("#sube h1").slideDown()
+            });
+            $("#slideToggle").click(function(){
+               $("#slideToggle h1").slideToggle()
+            });
+            $("#fadein").click(function(){
+               $("#hide").fadeIn();
+               $("#slideToggle h1").fadeIn("lento");
+            });
+            $("#fadeout button").click(function(){
+               $("#hide").fadeOut();
+               $("#click").fadeOut();
+               $("#show").fadeOut();
+            });
+            $("#clase").click(function(){
+               $(".cajas1").addClass("cajas4");
+            });
+            $("#before").click(function(){
+               $("#before h1").before("Esto funciona");
+            });
+            $("#after").click(function(){
+               $("#after p").after("Esto es maravilloso");
+            });
+            $("#append").click(function(){
+               $("ul").append("Un gusto verte");
+            });
+            $("#html").click(function(){
+               $("#html h1").append("<br>Explicando Funciones");
+            });
+            $("#valores").click(function(){
+                $("li").attr("type","square");
+            });
+            $("#val").click(function(){
+               $("input:text").val ("Joselyn Castro");
+            });
+            $("#text").click(function(){
+               $("button").text ("Presionar");
+            });
+        </script>
+    </body>
+</html>
+    

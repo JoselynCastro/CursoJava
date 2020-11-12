@@ -93,7 +93,7 @@
 					enemies[i].y=0;
 					enemies[i].x= Math.random()*1000;
 				}
-			}
+			}	
 		}
 		function movebullets(){
 			for(var i=0; i<bullets.length;i++){
@@ -144,11 +144,10 @@
 			}
 			else if(mov.keyCode == 32){
 				bullets.push({x:hero.x+5, y:hero.y-20});
+				
 				displayBullets();
 			}
-			if(container[hero.x][hero.y]==container[enemies[i].x][enemies[i].y]){
-				score=score-500;
-			}
+			
 			displayHero();
 			moveenemies();
 			displayEnemies();
