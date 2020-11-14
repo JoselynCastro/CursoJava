@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Cursor en fuera" content="actividad jquery">
+        <title>Cursor</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+        #contenedor{
+            height: 480px;
+            padding:50px;
+            background-color: rgb(218, 132, 175);   
+        }
+        p{
+            font-size: 25px;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            display: inline-table;
+            margin-top: 5px;
+            border: 4px solid black;
+            width:150px;
+            height: 200px;
+            margin-left: 10px;
+            align-content: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <h1>OPUESTOS</h1>
+            <p>Los conceptos opuestos son una serie de palabras relacionadas entre sí por ser una contraria de la otra respecto a significado. 
+               <br>Sirven para que nuestros niños puedan comprender diferencias entre distintos términos.
+               <br>Pasa el cursor sobre la imagen y observa el opuesto del concepto en cuestion.</p>
+            <img src="img/anciano.png" data-alt-src="img/joven.png" alt="primera imagen">
+            <img src="img/blanco.png" data-alt-src="img/negro.png" alt="segunda imagen">
+            <img src="img/delante.png" data-alt-src="img/detras.png" alt="tercera imagen">
+            <img src="img/izquierda.png" data-alt-src="img/derecha.png" alt="cuarta imagen">
+            <img src="img/muchos.png" data-alt-src="img/pocos.png" alt="quinta imagen">
+            <img src="img/grande.png" data-alt-src="img/pequeño.png" alt="sexta imagen">
+            <img src="img/abierto.png" data-alt-src="img/cerrado.png" alt="sexta imagen">
+        </div>
+        <script>
+            $("img").hover(function(){
+                var temp= $(this).attr('src');
+                $(this).attr("src",$(this).attr("data-alt-src"));
+                    $(this).attr("data-alt-src", temp);  
+                });
+        </script>
+    </body>
+</html>
