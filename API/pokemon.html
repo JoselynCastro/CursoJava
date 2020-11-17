@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Pokemon" content="actividad API">
+        <title>Pokemon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                for(var i=1;i<=50;i++){
+                    var a="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+ i +".png";
+                    $("#contenedor").append("<img src=" + a +">");
+                    console.log(a);
+                }
+            });
+       </script>
+        <style>
+            #contenedor{
+                background-color: rgb(81, 226, 81);
+                height: 100%;
+                padding: 20px 40px;
+                text-align: center;
+            }
+            img{
+                width:100px;
+                height:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <h1>Pokemon</h1>
+        </div> 
+        <script>
+             $("img").html(function(){
+                 for(var i=0; i<num; i++){
+
+                 }
+             }
+        </script>
+    </body>
+</html>
