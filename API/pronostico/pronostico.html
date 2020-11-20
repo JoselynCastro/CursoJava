@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="tiempo" content="actividad API">
+        <title>Pronóstico del Tiempo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('form').submit(function() {
+                    url="http://api.openweathermap.org/data/2.5/weather?q="+$('#ciudad').val()+"&&appid=3b98915dbd3931ec93c8ec203fc618ad";
+                    console.log(url) ;
+        
+                 $.get(url, function(res) {
+                     $("#lugar").html("<h2><span>Ciudad:</span><br>"+res.name+"</h2>");
+                     $("#temperatura").html("<h2><span>Temperatura:</span><br>"+res.main.temp+"°</h2>");
+                     $("#coordenadas").html("<h2><span>Coordenadas:</span><br>Longitud:"+res.coord.lon+"<br>Latitud:"+res.coord.lat+"");
+                 }, 'json');
+        // don't forget to return false so the page doesn't refresh
+                  return false;
+            });
+        });
+        </script>
+        <style>
+            body{
+                padding-left: 250px;
+            }
+            #contenedor{
+                padding: 40px;
+                width: 700px;
+                height: 520px;
+                background-color: green;
+                background-image: url("cielooo.jpg");
+                text-align: center;
+                background-size: 800px 600px;
+            }  
+            form{
+                color: white;
+                font-size: 30px;
+            }  
+            input{
+                border-radius: 5px;
+                font-size: 20px;
+            } 
+            span{
+                color:white
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <h1>PRONÓSTICO DEL TIEMPO</h1>
+            <br>
+            <form>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+                <input type="submit" value="consultar">
+            </form>
+            <h2 id="lugar"></h2>
+            <h2 id="temperatura"></h2>
+            <h2 id="coordenadas"></h2>
+            <br>
+        </div>
+    </body>
+</html>
