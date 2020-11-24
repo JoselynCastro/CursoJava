@@ -24,7 +24,7 @@
              })
             $('.side_box').click(function(event){
                 event.stopPropagation();
-                $('.side_box').siblings().css("background-color",random_color());
+                $(this).siblings().css("background-color",random_color());
             })
           });
       </script>

@@ -1,0 +1,22 @@
+#barra{
+    background-color: black !important;
+}
+#imagenes{
+    padding:40px 110px; 
+    background-color: rgba(19, 17, 17, 0.787);
+}
+.casa{
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+    border: blanchedalmond 3px solid;
+}
+.card{
+    margin-left: 250px;
+}
+h1,h6{
+    text-align: center;
+}
+span{
+    font-weight: bold;
+}
