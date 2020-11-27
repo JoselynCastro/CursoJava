@@ -55,6 +55,7 @@
 #columna{
     width: 300px;
     height: 600px;
+    display: inline-table;
 }
 #columna1{
     width:300px;
@@ -62,6 +63,7 @@
     padding-left: 5px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 #link1{
     background-color:#3473a9;
@@ -95,6 +97,7 @@
     margin-top: 20px;
     padding: 15px;
     margin-left: 20px;
+    
 }
 #codigo{
     width:300px;
@@ -121,10 +124,11 @@
     margin-top: 15px;
 }
 #texto{
-    width:940px;
+    width:600px;
     height:600px;
     vertical-align: top;
     margin-left: 60px;
+    display: inline-block;
 }
 #subencabezado{
     width:950px;
@@ -164,9 +168,10 @@
     color: #0bc2e0;
 }
 #textointerior{
-    width:950px;
+    width:800px;
     height:500px;
     font-family: 'Times New Roman', Times, serif;
+    display: inline-table;
 }
 .subtitulo{
     color:#25679f;

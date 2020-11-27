@@ -1,0 +1,65 @@
+  *{
+      font-style: arial,verdana,comic
+  }
+  #todo{
+    background-color:#1b345d;
+    margin: 0px auto;
+    padding: 1px;
+   }
+   #Encabezado{
+    min-height: 85px;
+    background-color:#cf3036;
+    width: 1230px;
+    margin: 40px;
+    border-radius: 20px;
+   }
+   .titulo{
+       color: darkgray;
+       font-size: 1.5cm;
+       text-align:left;
+       margin-left: 10px;
+   }
+   #columna{
+    min-height:400px;
+    width: 270px;
+    margin: 40;
+    margin-left: 40px;
+    display: inline-block;
+    background-color:#297d8c;
+    border-radius: 20px;
+   }
+   .texto1{
+       color: rgba(201, 184, 184, 0.952);
+       font: size 0.4;cm;
+       text-align: left;
+       padding: 10px;
+   }
+   #Texto{
+    min-height: 600px;
+    width: 880px;
+    margin-left: 40px;
+    background-color:#0e1822;
+    display: inline-block;
+    border-radius: 20px;
+    vertical-align: top;
+   }
+   .texto2{
+       color: #c1d3e4;
+       text-align: left;
+       margin-left: 15px;
+       padding:10px;
+   }
+   #piedepagina{
+    min-height:50px;
+    width: 1230px;
+    background-color:#5d6673;
+    margin:40px;
+    border-radius: 20px;
+    padding: 10px;
+   }
+   .color{
+       color: rgb(46, 154, 255);
+   }
+   .Negrita{
+       color: indigo;
+   }
