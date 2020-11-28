@@ -1,0 +1,31 @@
+*{outline: 1px dotted red}
+#contenedor{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+#minicontenedor,#fin,#inicio{
+    display: inline-table;
+}
+#minicontenedor{
+    background-color: blue;
+    width: 69%;
+    height: 645px;
+    display: inline-table;
+    vertical-align: top;
+}
+#inicio{
+    width: 200px;
+    height: 200px;
+    margin: 0%;
+    display: inline-table;
+}
+#ninja{
+    
+}
+#fin{
+    width: 200px;
+    height: 200px;
+    display: inline-table;
+    vertical-align: bottom;
+}
