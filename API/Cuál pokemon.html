@@ -15,7 +15,7 @@
                     $("img").click(function clikeo(){
                         var b=$(this).attr("id");
                         $.get(" https://pokeapi.co/api/v2/pokemon/"+b+"/", function(res){
-                            console.log(res);
+                           console.log(res);
                            $("#pokemon").html("<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+ b+".png'>");
                            $("#nombre").html("<h2>"+res.name+"<h2>");
                            $("#tipo").html("<p>Tipo: "+res.types[0].type.name+"</p>");
