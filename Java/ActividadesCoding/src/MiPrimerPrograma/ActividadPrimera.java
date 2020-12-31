@@ -6,9 +6,9 @@ public class ActividadPrimera {
 		int edad=32;
 		String nombre="Joselyn Castro";
 		String ciudad="Temuco";
-		System.out.println("Mi nombre es" + nombre +".");
-		System.out.println("Tengo"+ edad +"años de edad.");
-		System.out.println("Mi ciudad es " + ciudad +".");
+		System.out.println("Mi nombre es " + nombre +".");
+		System.out.println("Tengo "+ edad +" años de edad.");
+		System.out.println("Mi ciudad es "+ ciudad +".");
 	}
 }
 
