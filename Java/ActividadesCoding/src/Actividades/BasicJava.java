@@ -57,16 +57,15 @@ public final class BasicJava{
 	   return myArray;
    }
    
-//   public ArrayList<Integer> mayores(int []f, int m) {
-//	   ArrayList<Integer> array = new ArrayList<Integer>();
-//	   var temp=0;
-//	   for(int i = 0; i<f.length; i++) {
-//		   if(f[i]>m) {
-//		   array.add(f[i]);
-//	     }
-//	   }
-//	   return (array.length);//editar
-//   }
+   public int mayores(int []f, int m) {
+	   int cont=0;
+	   for(int i = 0; i<f.length; i++) {
+		   if(f[i]>m) {
+		   cont= cont+1;
+	     }
+	   }
+	   return cont;
+   }
   
    public ArrayList<Integer> potencia(int []s) {
 	   ArrayList<Integer> array = new ArrayList<Integer>();

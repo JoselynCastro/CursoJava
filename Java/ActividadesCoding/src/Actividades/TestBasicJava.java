@@ -21,9 +21,9 @@ public class TestBasicJava {
 		
 		System.out.println(ejercicios.arrImp(255));
 		
-//		int[ ]f= {1,3,5,7};
-//		int m=3;
-//		System.out.println(ejercicios.mayores(f,m));
+		int[ ]f= {1,3,5,7};
+		int m=3;
+		System.out.println(ejercicios.mayores(f,m));
 		
 		int[ ]s= {1,5,10,-2};
     	System.out.println(ejercicios.potencia(s));
