@@ -3,7 +3,7 @@ package JavaOpp.ListAssigment;
 public class SinglyLinkedList {
 	 public Node head;
 	    public SinglyLinkedList() {
-	        // su codigo aqui
+	    	this.head =null;
 	    }
 	    //Los metodos de la SLL van aqui. Al principio, les mostraremos cómo agregar nodos a la lista.
 	    public void add(int value) {
@@ -17,6 +17,13 @@ public class SinglyLinkedList {
 	            }
 	            runner.next = newNode;
 	        }
-	    }    
-	
+	    }  
+	    public void remove(int value) {
+	         
+	    	}
+	    public void printValues() {
+	    	
+	    	
+	    }
+	    	
 }

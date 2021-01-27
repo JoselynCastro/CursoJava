@@ -10,9 +10,9 @@ public class ListTester {
 		        sll.add(5);
 		        sll.add(15);
 		        sll.add(2);
-		        sll.remove();
-		        sll.remove();
-		        sll.printValues();
+//		        sll.remove();
+//		        sll.remove();
+//		        sll.printValues();
 		    }
        }
 
