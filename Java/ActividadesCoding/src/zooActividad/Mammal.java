@@ -8,7 +8,6 @@ public class Mammal {
 		this.energyLevel = energyLevel;
 	}
 
-
 	public int displayEnergy() {
 		System.out.println(energyLevel);
 		return energyLevel;
