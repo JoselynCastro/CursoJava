@@ -1,4 +1,4 @@
-package zooActividad;
+package maestroObjetos;
 
 public class Gorilla extends Mammal {
 
