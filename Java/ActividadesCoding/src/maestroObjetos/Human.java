@@ -14,6 +14,10 @@ public class Human {
 		this.health = health;
 	}
 
+	public Human() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void attackHuman(Human atacador) {
 		this.setHealth( this.getHealth() -	atacador.getStrength());
 	}
@@ -34,7 +38,7 @@ public class Human {
 		this.stealth = stealth;
 	}
 
-	private int getIntelligence() {
+	public int getIntelligence() {
 		return intelligence;
 	}
 
@@ -49,4 +53,5 @@ public class Human {
 	public void setHealth(int health) {
 		this.health = health;
 	}
+
 }

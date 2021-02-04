@@ -6,10 +6,13 @@ public class Wizard extends Human {
 		super(strength, stealth, 8, 50);
 		// TODO Auto-generated constructor stub
 	}
-    public void heal(Human sanado) {
-    	sanado.setHealth(this.getIntelligence()+sanado.setHealth());
+    public Wizard() {
+		// TODO Auto-generated constructor stub
+	}
+	public void heal(Human sanado) {
+    	sanado.setHealth(this.getIntelligence()+sanado.getHealth());
     }
     public void fireBall(Human enfermo) {
-    	enfermo.setHealth(this.getIntelligence()-enfermo.setHealth()*3);
+    	enfermo.setHealth(this.getIntelligence()-enfermo.getHealth()*3);
     }
 }
