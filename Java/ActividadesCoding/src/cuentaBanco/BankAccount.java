@@ -6,7 +6,7 @@ public class BankAccount {
 	private double saldoCuentaCorriente;
 	
 	static int numeroDeCuentas=0;
-	private static double dineroAlmacenado=0;
+	private static double dineroAlmacenado;
 	
 	public String numeroCuenta() {
 		numCuenta="";
@@ -35,22 +35,21 @@ public class BankAccount {
 	}
 	
 	public void giroCuentaAhorro(double cantidad) {
-		System.out.println("Acabas de girar:"+ cantidad +" de tu cuenta "+getNumCuenta() );
-			if(BankAccount.getDineroAlmacenado() > cantidad) {
-    			saldoCuentaAhorro-=(BankAccount.getDineroAlmacenado()-cantidad);
-    			System.out.println("Acabas de girar:"+ cantidad +"de tu cuenta"+ getNumCuenta());
+			if(saldoCuentaAhorro >= cantidad) {
+    			saldoCuentaAhorro-=(saldoCuentaAhorro-cantidad);
+    			System.out.println("Acabas de girar:"+ cantidad);
     		}
 			else{
-    			System.out.println("No tiene saldo suficiente en tu cuenta "+ getNumCuenta());
+    			System.out.println("No tiene saldo suficiente en tu cuenta");
     		}
 	}
 	public void giroCuentaCorriente(double cantidad) {
-		if(BankAccount.getDineroAlmacenado() > cantidad) {
-			saldoCuentaCorriente-=(BankAccount.getDineroAlmacenado()- cantidad);
-			System.out.println("Acabas de girar:"+ cantidad +"de tu cuenta"+getNumCuenta() );
+		if(saldoCuentaCorriente >= cantidad) {
+			saldoCuentaCorriente-=(saldoCuentaCorriente- cantidad);
+			System.out.println("Acabas de girar:"+ cantidad);
 		}
-		if(BankAccount.getDineroAlmacenado()  < cantidad) {
-			System.out.println("No tiene saldo suficiente en tu cuenta "+ getNumCuenta());
+		else {
+			System.out.println("No tiene saldo suficiente en tu cuenta ");
 		}
     }
 

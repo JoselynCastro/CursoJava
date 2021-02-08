@@ -1,6 +1,7 @@
 package pokemon;
 
-public class Pokemon {
+
+public class Pokemon{
 	private String name;
 	private int health;
 	private String type;
@@ -12,13 +13,14 @@ public class Pokemon {
 		this.name = name;
 		this.health = health;
 		this.type = type;
-		setNumeroPokemones(getNumeroPokemones() + 1);
+		numeroPokemones++;
 	}
 
 	public void attackPokemon(Pokemon pokemon) {
-		pokemon.setHealth(getHealth()-10);
+		pokemon.setHealth(pokemon.getHealth()-10);
+		System.out.println("La vida actual de tu pokemon "+pokemon.getName()+" es "+ pokemon.getHealth());
 	}
-
+	
 	public int getHealth() {
 		return health;
 	}
@@ -50,5 +52,12 @@ public class Pokemon {
 	public static void setNumeroPokemones(int numeroPokemones) {
 		Pokemon.numeroPokemones = numeroPokemones;
 	}
+
+	public static int getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
 	
 }

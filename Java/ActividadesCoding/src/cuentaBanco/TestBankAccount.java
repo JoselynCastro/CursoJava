@@ -19,6 +19,8 @@ public class TestBankAccount {
 		actividad1.saldoCuentaAhorro();
 		actividad4.saldoCuentaCorriente();
 		actividad4.giroCuentaAhorro(150000);
+		actividad4.depositoCuentaCorriente(100000);
+		actividad4.giroCuentaCorriente(200000);
 	}
 
 }
